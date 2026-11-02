@@ -1,0 +1,43 @@
+{
+  "measurement_date": "2026-10-27",
+  "scope": "Recorded local demonstration results; raw data and generated artifacts are excluded from the Git package and must be regenerated to rerun the engineering observer.",
+  "results": {
+    "measurements": {
+      "schematic": {
+        "gain_1k_V_V": 135.857249,
+        "transient_signed_gain": -135.46272197081723,
+        "output_bias_V": 0.899991742,
+        "supply_current_A": 6.52846264e-06,
+        "phase_1k_deg": 179.971864,
+        "output_peak_V": 0.13546273700254596
+      },
+      "extracted": {
+        "gain_1k_V_V": 135.857247,
+        "transient_signed_gain": -135.46271814909127,
+        "output_bias_V": 0.899991743,
+        "supply_current_A": 6.52846264e-06,
+        "phase_1k_deg": 179.970282,
+        "output_peak_V": 0.1354627350585503
+      },
+      "bias_selection": {
+        "bias_V": 0.7265831743229686,
+        "selection": "linear interpolation of DC Vout=0.9 V crossing"
+      }
+    },
+    "physical": {
+      "top": "amplifier",
+      "cells": 3,
+      "top_shapes": 17,
+      "bbox_um": [
+        -3.12,
+        -2.62,
+        3.12,
+        16.095
+      ],
+      "extracted_capacitors": 5,
+      "magic_drc_errors": 0,
+      "lvs": "unique match; disconnected-gate control rejected",
+      "gds_sha256": "eb23ebbe01e4d57fffa32da8b6357e90e32f699ae568dab0be131128dc173af9"
+    }
+  }
+}

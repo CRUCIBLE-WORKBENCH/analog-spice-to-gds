@@ -1,0 +1,6 @@
+* CMOS inverter used as an externally biased voltage amplifier.
+* Dimensions are micrometres; sources, bias and load belong to the testbench.
+.subckt amplifier vin vout vdd vss
+XN vout vin vss vss sky130_fd_pr__nfet_01v8 w=2 l=0.5
+XP vout vin vdd vdd sky130_fd_pr__pfet_01v8 w=6 l=0.5
+.ends amplifier

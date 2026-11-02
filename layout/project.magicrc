@@ -1,0 +1,6 @@
+set PDKPATH $env(PDKPATH)
+tech load $PDKPATH/libs.tech/magic/sky130A.tech
+scalegrid 1 2
+source $PDKPATH/libs.tech/magic/sky130A.tcl
+drc euclidean on
+ext2spice scale off

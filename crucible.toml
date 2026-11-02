@@ -1,0 +1,10 @@
+[workspace]
+name = "analog-spice-gds"
+id = "analog-spice-gds-73cc7824"
+environment = "analog-spice-gds"
+environments = [ "analog-spice-gds",]
+
+[workspace.metadata]
+managed = false
+created_at = "2026-10-27T08:48:43.153948+00:00"
+created_by = "crucible-core"
