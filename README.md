@@ -40,7 +40,7 @@ Run the complete experiment after satisfying those prerequisites:
 igny run --env analog-spice-gds make run AMPLIFIER_PDK=/path/to/sky130A MAGIC_LOCAL=/path/to/tcl-magic
 ```
 
-Every executable example in this guide goes through Igny. Make delegates to the supplied stage scripts and observers; failed stages stop the workflow. Make 4.4.1 is installed separately from the existing engineering-tool lock. The setup target uses the Igny-launched Python interpreter to create an isolated environment in ignored build/observer-venv and install requirements.txt there, then checks the imported module locations. It does not change system Python or a shared tool payload. The check target checks observer imports; it does not qualify a PDK or native-library installation.
+Every executable example in this guide goes through Igny. Make delegates to the supplied stage scripts and observers; failed stages stop the workflow. Make 4.4.1 is installed separately from the existing engineering-tool lock. The setup target uses the Igny-launched Python interpreter to install requirements.txt into an ignored project-local prefix at build/observer, then checks the imported module locations. It does not change system Python or a shared tool payload. The check target checks observer imports; it does not qualify a PDK or native-library installation.
 
 ## How it works
 
@@ -139,3 +139,5 @@ This checks the public candidate and document hashes; it does not publish anythi
 ## Licence
 
 Dependencies retain their upstream licences and credit. This checkout has no project-wide licence grant; the owner must select the intended project licence before presenting it as an open-source release. No upstream endorsement is implied.
+
+Source repository: [CRUCIBLE-WORKBENCH/analog-spice-to-gds](https://github.com/CRUCIBLE-WORKBENCH/analog-spice-to-gds).
